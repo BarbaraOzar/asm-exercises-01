@@ -12,3 +12,4 @@
                             ; MAIN
     ldi r16, ~(1<<pina)     ; invert the bit pattern 0000 0001 and write it to r16
     out porta, r16          ; write the pattern to port a's output control register
+	nop
