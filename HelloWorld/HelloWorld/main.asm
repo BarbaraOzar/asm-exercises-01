@@ -5,7 +5,7 @@
 ; Author : chfs
 ;
 
-start:						; label to indicate the loop
+start:						          ; label to indicate the start of the loop
                             ; SETUP
     ldi r16, 0xff           ; load the bit pattern 1111 1111 into r16
     out ddra, r16           ; write the bit pattern to port a's data direction register
@@ -14,7 +14,7 @@ start:						; label to indicate the loop
     ldi r16, ~(4<<pina)     ; invert the bit pattern 0000 0001 and write it to r16
     out porta, r16          ; write the pattern to port a's output control register
 	
-	rjmp start				; loops back to start
+	rjmp start				        ; loops back to start
 
 
 
